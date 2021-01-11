@@ -1,0 +1,72 @@
+html {
+    font-family: "Piazzolla", serif;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    bottom: 10px;
+    height: 100%;
+    border-right: 1px solid gray;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#navbar a {
+    display: block;
+    padding: 25px;
+    border: 0.5px solid #dddddd;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar header {
+    font-size: 1.4em;
+    padding: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#main-doc {
+    margin-left: 310px;
+    text-align: justify;
+    margin-bottom: 100px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+#main-doc header {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+}
+
+#main-doc code {
+    display: block;
+    padding: 25px;
+    margin: 20px 5px;
+    width: 85%;
+    border-radius: 5px;
+    background-color: #dedede;
+}
+
+#main-doc p,
+#main-doc li {
+    padding: 8px 0;
+}
+
+@media (max-width: 815px) {
+    #navbar {
+        overflow: hidden;
+        border: none;
+        position: relative;
+    }
+    #navbar a {
+        display: none;
+    }
+    #main-doc {
+        margin-left: 0px;
+        padding-left: 25px;
+    }
+}
